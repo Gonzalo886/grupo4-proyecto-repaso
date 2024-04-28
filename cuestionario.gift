@@ -1,0 +1,241 @@
+::Routers y sus procesos::
+El proceso realizado por el router se denomina {
+    =Etiquetado
+    ~Empaquetado
+    ~Encabezado
+    ~Transporte
+}
+
+::Tipos de VLAN::
+Los tipos de Vlan son {
+    ~Transporte, nativa, datos
+    ~Nativa, administración, datos
+    ~Dirección, datos, troncal, nativa
+    =Administración, nativa, predeterminada, datos
+}
+
+::Rendimiento VLAN::
+Las VLAN mejoran el rendimiento de la red mediante la división de grandes dominios de difusión en otros más pequeños.
+Seleccione una {
+    ~Falso
+    =Verdadero
+}
+
+::Utilidad de router::
+Los router se utilizan para crear las VLANs
+Seleccione una {
+    =Falso
+     ~Verdadero
+}
+
+::Creación VLAN::
+¿Qué comando se utiliza para crear una VLAN?{
+    =vlan id-vlan
+    ~vlan create
+    ~vlan setup
+    ~vlan start
+}
+
+::Configuración en VTP::
+Un switch configurado en modo VTP transparente no puede crear, modificar ni elimiar VLANs {
+    =Falso
+     ~Verdadero
+}
+
+::Beneficios VLAN::
+¿Cuáles son los beneficios de utilizar VLANs?
+
+Selecciona una o más de una {
+    =Mejor renddimiento
+    =Redución de costos
+    =Seguridad
+    ~Mayor complejidad
+}
+
+::Proposito VLAN::
+¿Cuál es el propósito principal de una VLAN? {
+    ~Aumentar la cantidad de switches en la red
+    ~Facilitar la administración de dispositivos en la red
+    ~Reducir el ancho de banda de la red
+    =Segmentar la red lógicamente
+}
+
+::Asignación de Puertos en Switches a VLANs::
+Cada puerto de un switch puede ser asignado a múltiples VLANs al mismo tiempo {
+     ~Verdadero
+     =Falso
+}
+
+::Beneficios de Usar VLANs::
+¿Cuáles son las ventajas de usan VLAN? 
+Selecciona una o más de una {
+    =Mejora la seguridad
+    ~Simplifica la configuración de la red
+    =Aumenta la eficiencia del ancho de banda
+    =Reduce el tamaño de los dominios de colisión
+}
+
+::VLAN Nativa y Seguridad::
+La VLANs nativa debe ser siempre la VLAN 1 por razones de seguridad {
+     ~Verdadero
+     =Falso
+}
+
+::VLAN Predeterminada en Cisco::
+La VLAN predeterminada en un switch Cisco puede cambiarse {
+     ~Verdadero
+     =Falso
+}
+
+::Comando para Verificar VLANs en Cisco::
+¿Qué comando se utiliza para verificar la configuración de VLAN en un switch Cisco? { 
+    =show vlan brief
+}
+
+::Pasos para Implementar una VLAN::
+¿Cuáles son las operaciones necesarias para poner en funcionamiento una VLAN? 
+Selecciona una o más de una {
+    =Crear la VLAN
+    =Configurar enlaces troncales
+    ~Configurar el enrutamiento
+    =Asignar puertos a la VLAN
+}
+
+::Funcionamiento del VTP en Switches::
+VTP permite la configuración de VLANs en un entorno de switches de manera distribuida, sin un servidor VTP central {
+     ~Verdadero
+     =Falso
+}
+
+::Comunicación entre Diferentes VLANs::
+¿Qué se requiere para que los dispositivos en diferentes VLANs se comuniquen entre sí? { 
+    =enrutamiento entre VLANs
+}
+
+::Enrutamiento con Subinterfaces en VLANs::
+El enrutamiento entre VLANs se puede realizar utilizando un único enlace troncal con subinterfaces configurads en el router {
+     =Verdadero
+     ~Falso
+}
+
+::Características de Seguridad en VLANs::
+¿Qué característica de seguridad ofrece el uso de VLANs? 
+Selecciona una o más de una {
+    =Aislamiento de tráfico
+    ~Filtrado de paquetes
+    ~Prevención de ataques internos
+    =Control de acceso basado en roles
+}
+
+::Función del Etherchannel::
+Etherchannel es utilizado para combinar varios enlaces físicos en un único enlace lógico para aumentar el ancho de banda {
+     =Verdadero
+     ~Falso
+}
+
+::Etiquetado de la VLAN Nativa::
+La VLAN nativa en un enlace troncal está etiquetada por defecto {
+     ~Verdadero
+     =Falso
+}
+
+::Estándar para Etiquetado de VLAN::
+¿Qué estándar define el etiquetada de VLAN en trama Ethernet? {
+    ~IEEE 802.3
+    ~IEEE 802.5
+    =IEEE 802.1Q
+    ~IEEE 802.11
+}
+
+::Limitaciones de Enrutamiento en Switches de Capa 2::
+Los switches de capa 2 no pueden realizar enrutamiento entre VLANs sin la ayuda de un router o un switch de capa 3 {
+     =Verdadero
+     ~Falso
+}
+
+::Propósito de la VLAN de Datos::
+Una VLAN de datos en una VLAN confiruada para transportar tráfico generado únicamente por dispositivos administrativos {
+     =Falso
+     ~Verdadero
+}
+
+::Administración de Switches a través de VLAN::
+Permite que el switch se administre mediante HTTP, Telnet, SSH o SNMP {
+    ~VLAN nativa
+    ~VALN predeterminada
+    =VLAN de administración
+    ~VLAN de datos
+}
+
+::Capacidad Máxima de VLANs::
+¿Cuál es la capacidad máxima de VLANs que puede gestionar IEEE 802.1Q? {
+    ~1024
+    ~2048
+    =4096
+    ~8192
+}
+
+::VLAN Específica para Tráfico de Voz::
+¿Qué tipo de VLAN transporta tráfico de voz expecíficamente? {
+    ~VLAN de administración
+    =VLAN de voz
+    ~VLAN de datos
+    ~VLAN predeterminada
+}
+
+::Gestión de VLANs con VTP en Múltiples Switches::
+¿Qué protocolo se utiliza comúnmente para gestionar la pertenecina de VLANs en un entorno con múltiple switches? {
+    ~RSTP
+    =VTP
+    ~OSPF
+    ~BGP
+}
+
+::Comando para Configurar un Puerto Troncal ::
+¿Qué comando establece un puerto troncol en un switch Cisco? {
+    ~switchport mode dynamic
+    ~switchport trunk on
+    =switchport mode trunk
+    ~switchport teunk set
+}
+
+::Impacto de las VLANs en la Latencia de la Red::
+Las VLANs pueden reducir significativamente la latencia en una red grande {
+    =Verdadero
+    ~Falso
+}
+
+::Interfaz Virtual para Gestión IP de Switches::
+¿Cómo se llama la interfaz virtual que se utiliza para gestionar un switch a través de IP { 
+    =SVI
+}
+
+::Comando para Consultar Información de VLANs::
+¿Qué comando se utiliza para vereficar la información de las VLANs en un switch Cisco { 
+    =show vlan
+}
+
+::Protocolo para Administración Centralizada de VLANs::
+¿Qué protocolo es utilizado por los switches para administrar la configuración de VLANs de manera centralizada{ 
+    =VTP
+}
+
+::Significado de SVI en Redes::
+¿Qué significa la abreviatura SVI en el contexto de redes? { 
+    =Switch Virtual Interface
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
